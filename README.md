@@ -1,1 +1,1 @@
-# javascript-course-game
+# javascript-dice-game
