@@ -4,10 +4,12 @@ h1 {
   font-family: "Lobster", sans-serif;
 }
 
-p {
+h2,
+li {
   font-family: "Indie Flower", sans-serif;
 }
 
-li {
+p,
+button {
   font-family: "Nunito", sans-serif;
 }
