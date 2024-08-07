@@ -1,10 +1,106 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
+:root {
+  --active-background-color: #3882f6;
+  --background-color-light: #dfd3c3;
+  --background-color-dark: #3a957e;
+  --text-color-light: #ffffff;
+  --text-color-dark: #f5a623;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  padding-inline-start: 0;
+  margin-block: 0;
+}
+
+body {
+  border: dashed 7px var(--text-color-light);
+  border-radius: 15px;
+  background-color: var(--background-color-dark);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 5%;
+}
+
+.main {
+  position: relative;
+  border: solid 7px var(--text-color-light);
+  background-color: var(--background-color-light);
+  background-image: linear-gradient(to top left, #7776b3 45%, #ffb030 90%);
+  border-radius: 15px;
+  width: 80%;
+  height: 50%;
+  display: flex;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.player-name {
+  color: var(--text-color-light);
+  position: relative;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.total-score {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--text-color-dark);
+  margin-bottom: 1rem;
+  border: dashed 4px var(--text-color-light);
+  padding: 3% 7%;
+  border-radius: 15px;
+}
+
+.round {
+  background-color: var(--background-color-dark);
+  opacity: 0.8;
+  border-radius: 9px;
+  padding: 10%;
+  text-align: center;
+  transition: all 0.75s;
+}
+
+.round-score-label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--text-color-light);
+}
+
+.round-score {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--text-color-dark);
+}
 
 h1 {
+  color: var(--text-color-light);
   font-family: "Lobster", sans-serif;
-  font-size: 7rem;
+  font-size: 3.5rem;
 }
 
 h2,
@@ -18,5 +114,5 @@ button {
 }
 
 .dice-img {
-  width: 100px;
+  width: 80px;
 }
