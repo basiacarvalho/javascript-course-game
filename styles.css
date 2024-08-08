@@ -3,7 +3,7 @@
 :root {
   --active-background-color: #3882f6;
   --background-color-light: #dfd3c3;
-  --background-color-dark: #3a957e;
+  --background-color-dark: rgb(58, 149, 126);
   --text-color-light: #ffffff;
   --text-color-dark: #f5a623;
 }
@@ -19,32 +19,50 @@
 
 body {
   border: dashed 7px var(--text-color-light);
-  border-radius: 15px;
   background-color: var(--background-color-dark);
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
+  justify-content: space-between;
   align-items: center;
 }
 
 .header {
+  top: 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 15px;
-  margin-bottom: 5%;
+  margin-top: 10%;
+  /* margin-bottom: 5%; */
 }
 
 .main {
   position: relative;
   border: solid 7px var(--text-color-light);
   background-color: var(--background-color-light);
-  background-image: linear-gradient(to top left, #7776b3 45%, #ffb030 90%);
+  background-image: linear-gradient(to top left, #7776b3 45%, #e54384 90%);
   border-radius: 15px;
-  width: 80%;
+  width: 90%;
   height: 50%;
   display: flex;
+}
+
+.footer {
+  background-color: var(--text-color-dark);
+  color: var(--text-color-light);
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
+  width: 100%;
 }
 
 .section {
@@ -52,67 +70,113 @@ body {
   flex-direction: column;
   flex: 50%;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .player-name {
   color: var(--text-color-light);
   position: relative;
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 2px;
   font-weight: 700;
-  margin-bottom: 1rem;
+  font-family: "Indie Flower", sans-serif;
 }
 
 .total-score {
   font-size: 5rem;
   font-weight: 700;
   color: var(--text-color-dark);
-  margin-bottom: 1rem;
+  margin-bottom: 10%;
   border: dashed 4px var(--text-color-light);
   padding: 3% 7%;
   border-radius: 15px;
+  font-family: "Nunito", sans-serif;
 }
 
 .round {
   background-color: var(--background-color-dark);
   opacity: 0.8;
   border-radius: 9px;
-  padding: 10%;
+  padding: 5% 7% 1.5%;
   text-align: center;
   transition: all 0.75s;
 }
 
 .round-score-label {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: var(--text-color-light);
+  font-family: "Indie Flower", sans-serif;
 }
 
 .round-score {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: bold;
   color: var(--text-color-dark);
+  font-family: "Nunito", sans-serif;
 }
 
-h1 {
+.header-text {
   color: var(--text-color-light);
   font-family: "Lobster", sans-serif;
   font-size: 3.5rem;
 }
 
-h2,
-li {
-  font-family: "Indie Flower", sans-serif;
-}
-
-p,
-button {
-  font-family: "Nunito", sans-serif;
+.dice-img-header {
+  width: 80px;
 }
 
 .dice-img {
-  width: 80px;
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  width: 120px;
+  transform: translateX(-50%);
+}
+
+/* ABSOLUTE POSITIONED ELEMENTS */
+.button {
+  font-family: "Nunito", sans-serif;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--text-color-light);
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s;
+
+  opacity: 0.8;
+  background-color: var(--background-color-dark);
+  backdrop-filter: blur(10px);
+
+  padding: 0.7rem 1.5rem;
+  border-radius: 15px;
+}
+
+.button-new {
+  top: 5%;
+}
+.button-roll {
+  top: 62%;
+}
+.button-hold {
+  top: 76%;
+}
+
+.button:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 0.2rem 1rem #fff;
+}
+
+.button:focus,
+.button:hover {
+  outline: none;
+  opacity: 70%;
+  border: 4px dashed var(--text-color-light);
 }
