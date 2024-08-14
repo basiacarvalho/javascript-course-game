@@ -56,6 +56,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 1% 0;
 }
 
 .section {
@@ -178,23 +179,6 @@ body {
   border: 2px dashed var(--background-color-dark);
 }
 
-@media (min-width: 768px) {
-  .button-roll:focus,
-  .button-roll:hover,
-  .button-hold:focus,
-  .button-hold:hover {
-    opacity: 80%;
-    border: 4px dashed var(--text-color-light);
-  }
-
-  .button-new:focus,
-  .button-new:hover {
-    outline: none;
-    opacity: 80%;
-    border: 4px dashed var(--background-color-dark);
-  }
-}
-
 .footer {
   background-color: var(--text-color-dark);
   color: var(--text-color-light);
@@ -276,7 +260,22 @@ body {
   }
 
   .button-new {
-    margin: 2% 34%;
+    margin: 2% 34% 0;
+  }
+
+  .button-roll:focus,
+  .button-roll:hover,
+  .button-hold:focus,
+  .button-hold:hover {
+    opacity: 80%;
+    border: 4px dashed var(--text-color-light);
+  }
+
+  .button-new:focus,
+  .button-new:hover {
+    outline: none;
+    opacity: 80%;
+    border: 4px dashed var(--background-color-dark);
   }
 
   .footer {
