@@ -41,6 +41,7 @@ body {
   margin-top: 5%;
   border-top: dashed 7px var(--text-color-light);
   border-bottom: dashed 7px var(--text-color-light);
+  padding: 1% 0;
 }
 
 @media (min-width: 768px) {
@@ -61,8 +62,7 @@ body {
   background-color: var(--background-color-light);
   background-image: linear-gradient(to top left, #7776b3 45%, #e54384 90%);
   border-radius: 10px;
-  width: 95%;
-  /* height: 70%; */
+  width: 90%;
   height: fit-content;
   display: flex;
   flex-wrap: wrap;
