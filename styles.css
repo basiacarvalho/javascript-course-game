@@ -39,7 +39,7 @@ body {
   justify-content: space-between;
   gap: 10px;
   margin-top: 5%;
-  border-top: dashed 7px var(--text-color-light);
+  /* border-top: dashed 7px var(--text-color-light); */
   border-bottom: dashed 7px var(--text-color-light);
   padding: 1% 0;
 }
@@ -82,11 +82,11 @@ body {
   color: var(--text-color-light);
   font-family: "Lobster", sans-serif;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 0;
+  padding: 2.5% 0;
   width: 100%;
 }
 
