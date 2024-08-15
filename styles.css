@@ -64,7 +64,7 @@ body {
   flex-direction: column;
   align-items: center;
   order: 1;
-  width: 50%;
+  width: 47%;
 }
 
 .section-buttons {
@@ -215,7 +215,7 @@ body {
   }
 
   .section {
-    width: 35%;
+    width: 32%;
   }
 
   .section-buttons {
@@ -346,4 +346,15 @@ body {
     font-size: 1.5rem;
     padding: 0.8% 0;
   }
+}
+
+/*Tą klasę muszę dodać potem do elementu który będę ukryć*/
+.hidden {
+  display: none;
+}
+
+.player-active {
+  margin: 3%;
+  border: solid 4px var(--text-color-light);
+  border-radius: 10px;
 }
