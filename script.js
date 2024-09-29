@@ -28,6 +28,8 @@ const initialSettings = function () {
   document.querySelector(".winner-section").classList.add("hidden");
   player1SectionElement.classList.add("player-active");
   player2SectionElement.classList.remove("player-active");
+  //Showing question dice agan
+  diceElement.src = "./images/dice-random.png";
 };
 
 initialSettings();
