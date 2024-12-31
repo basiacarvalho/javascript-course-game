@@ -46,6 +46,6 @@ A responsive, fun game of dice.
 
 ### Author
 
-<p align="justify">👩‍💻 The Dice Game is the result of taking part in a course on Udemy:'The Complete JavaScript Course 2025: From Zero to Expert!' by Jonas Schmedtmann. The Java Script code comes from the course content.
+<p align="justify">👩‍💻 The Dice Game is the result of taking part in a course on Udemy: 'The Complete JavaScript Course 2025: From Zero to Expert!' by Jonas Schmedtmann. The Java Script code comes from the course content.
 To the general structure of the HTML code from the course I added my 'header' and 'footer'. The entire style and the responsiveness of the App was done by me (Barbara Carvalho).
 </p>
