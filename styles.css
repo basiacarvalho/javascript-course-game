@@ -89,6 +89,7 @@ body {
   align-items: center;
   order: 1;
   width: 47%;
+  border: solid 4px transparent;
 }
 
 .section-buttons {
@@ -97,6 +98,7 @@ body {
   align-items: center;
   order: 2;
   width: 100%;
+  margin-top: 2.5%;
 }
 
 .player-name {
@@ -167,8 +169,10 @@ body {
   font-weight: 800;
   order: 0;
   width: 100%;
+  max-width: 130px;
   margin: 3% 30%;
   height: fit-content;
+  border: 2px dashed transparent;
 }
 
 .button-roll,
@@ -179,6 +183,7 @@ body {
   background-color: var(--background-color-dark);
   backdrop-filter: blur(10px);
   margin-bottom: 3%;
+  border: 2px dashed transparent;
 }
 
 .button:active {
@@ -214,6 +219,16 @@ body {
   align-items: center;
   padding: 2.5% 0;
   width: 100%;
+}
+
+/* Additional styles */
+.hidden {
+  display: none;
+}
+
+.player-active {
+  border: solid 4px var(--text-color-light);
+  border-radius: 10px;
 }
 
 @media (min-width: 768px) {
@@ -259,11 +274,13 @@ body {
 
   .section {
     width: 32%;
+    border: solid 7px transparent;
   }
 
   .section-buttons {
     order: 1;
     width: 30%;
+    margin-top: 0%;
   }
 
   .player-name {
@@ -303,7 +320,14 @@ body {
   }
 
   .button-new {
-    margin: 2% 34% 0;
+    margin: 2% 34%;
+    max-width: 250px;
+    border: 4px dashed transparent;
+  }
+
+  .button-roll,
+  .button-hold {
+    border: 3px dashed transparent;
   }
 
   .button-roll:focus,
@@ -311,7 +335,7 @@ body {
   .button-hold:focus,
   .button-hold:hover {
     opacity: 80%;
-    border: 4px dashed var(--text-color-light);
+    border: 3px dashed var(--text-color-light);
   }
 
   .button-new:focus,
@@ -324,6 +348,11 @@ body {
   .footer {
     font-size: 1.2rem;
     padding: 2% 0;
+  }
+
+  /* Additional styles */
+  .player-active {
+    border: solid 7px var(--text-color-light);
   }
 }
 
@@ -396,27 +425,11 @@ body {
 
   .button-new {
     margin: 2% 36%;
+    max-width: 280px;
   }
 
   .footer {
     font-size: 1.5rem;
     padding: 0.8% 0;
-  }
-}
-
-/* Additional styles */
-.hidden {
-  display: none;
-}
-
-.player-active {
-  margin: 3%;
-  border: solid 4px var(--text-color-light);
-  border-radius: 10px;
-}
-
-@media (min-width: 768px) {
-  .player-active {
-    border: solid 7px var(--text-color-light);
   }
 }
