@@ -1,6 +1,5 @@
 "use strict";
 
-//Selecting elements:
 const player1SectionElement = document.querySelector(".player1-section");
 const player2SectionElement = document.querySelector(".player2-section");
 const totalScore1Element = document.getElementById("total-score-1");
@@ -16,7 +15,6 @@ const buttonNew = document.querySelector(".button-new");
 let scores, roundScore, activePlayer, playingGame;
 
 const initialSettings = function () {
-  //Starting condtitions
   scores = [0, 0];
   roundScore = 0;
   activePlayer = 1;
@@ -28,17 +26,14 @@ const initialSettings = function () {
   document.querySelector(".winner-section").classList.add("hidden");
   player1SectionElement.classList.add("player-active");
   player2SectionElement.classList.remove("player-active");
-  //Showing question dice again
+
   diceElement.src = "./images/dice-random.png";
 };
 
 initialSettings();
 
 const switchPlayer = function () {
-  //Switch to a next player
-  //Setting scores for an active player to 0
   document.getElementById(`round-score-${activePlayer}`).textContent = 0;
-  //Round score znowu muszą być reset to zero
   roundScore = 0;
   //Showing question dice agan, when changing players
   diceElement.src = "./images/dice-random.png";
@@ -49,7 +44,7 @@ const switchPlayer = function () {
 };
 
 //Rolling dice functionality
-buttonRoll.addEventListener("click", function () {
+buttonRoll.addEventListener("click", async function () {
   if (playingGame) {
     //Hiding a random dice picture
     diceElement.classList.add("hidden");
@@ -70,6 +65,7 @@ buttonRoll.addEventListener("click", function () {
         roundScore;
     } else {
       //Switch to a next player
+      await new Promise((r) => setTimeout(r, 1000));
       switchPlayer();
     }
   }
