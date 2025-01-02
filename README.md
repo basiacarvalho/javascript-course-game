@@ -22,6 +22,24 @@ A responsive, fun game of dice.
 
 ### Game Rules:
 
+<p align="justify">
+
+The game is for max 2 people (You can play against yourself or with another player).
+
+An active player ‘rolls a dice’ and the numbers keep adding to the ‘round score’ area as points.
+
+The active player can keep rolling the dice as much as he wants.
+
+Each time, the active player can decide to roll a dice again or press a ‘hold’ button.
+
+When pressing the ‘hold button’ the points from the ‘round score’ area are moved to the ‘total score’ area and it’s the next player’s turn.
+
+If one of the players rolls number ‘1’, then all the points from the ‘round score’ area which haven’t been ‘hold’ are lost and it’s the opponent player’s turn.
+
+The first player to reach 100 points in the ‘total score’ area wins the game.
+
+</p>
+
 ### Technology stack
 
 - HTML
